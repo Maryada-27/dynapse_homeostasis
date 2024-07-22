@@ -63,12 +63,12 @@ def main():
     board.reset_fpga()
     board = DYN2init.dynapse2board(board=board, args=args)
     init_w = False # enable this to use initial weights from file instead of random weights
-    # parent_dir = '/media/mb/Data/DYNAP/EI_homeostasis/results/onchip_experimentaldata'
-    parent_dir = '/media/mb/Dev/workspace/dynapse/onchip_experimentaldata'
+    # parent_dir = '../results/onchip_experimentaldata'
+    parent_dir = '../onchip_experimentaldata'
     tname = "EI_homeostasis_highall"#EI_homeostasis | TEST_adapt | IF_curve | EI_homeostasis_OLH
 
     if init_w:
-        initial_weights_fname = "/media/mb/Data/DYNAP/initial_weights_scatter.h5"
+        initial_weights_fname = "../initial_weights_scatter.h5"
         df_w = pd.read_hdf(initial_weights_fname)
         coarse_fine_list = dict(
                     Pyr_Pyr = df_w[df_w.type =='PyrPyr'][['coarse','fine']].values, #E-to-E
