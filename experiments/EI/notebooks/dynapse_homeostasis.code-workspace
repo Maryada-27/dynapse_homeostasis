@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"path": "../../.."
+		},
+		{
+			"path": "../../../../onchip_experimentaldata"
+		}
+	],
+	"settings": {}
+}
