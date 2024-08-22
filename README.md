@@ -51,4 +51,3 @@ Wrapper functions to make it easier to use the internal functions of the chip.
 5. *learning.py*: Implementation of Cross-homeostasis and Owen Mackwood, Laura B Naumann, Henning Sprekeler rule. For future extension, Adam and Momentum is implemented but not used.
 6. *Input_Freq.py*: Experiment to generate *Input-Frequency* curve.
 7. *EI_homeostasis.py/sWTA_post_training.py*: Contains all necessary functions for classic EI_homeostasis and soft-WTA experiments.
-8.  
