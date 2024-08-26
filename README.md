@@ -3,7 +3,8 @@ This repository contains the code for "Stable recurrent dynamics in heterogeneou
 This python code create a neural network in accordance with the architecture of DYNAP-SE 2 chip. Briefly,the chip is a mixed-signal multi-core neuromorphic chip with 256 neurons-per-core. Each neuron has limited number of synapse connected to it (fan-in). 
 # Dependancies
 **This code will only work if the DYNAP-SE 2 chip with correct serial number is connected.**
-Install `samna-0.14.25.0` using `pip install samna ==0.14.25.0`(todo: check version). Additional standard package required are: numpy,pandas and matplotlib. 
+Install `samna-0.14.25.0` using `pip install samna ==0.14.25.0`(todo: check version). Additional standard package required are: numpy,pandas,seaborn and matplotlib. 
+For further information on samna, please read "https://synsense-sys-int.gitlab.io/samna/install.html"
 
 # How to run 
 `python3 main.py ./bitfiles/Dynapse2Stack.bit 1 orange` (or green) where Dynapse2Stack.bit is the firmware file that runs on OpalKelly FPGA. orange/green is a name set for different chip to identify them. It's critical as each chip is different and each chip has a corrosponding json file (see CAMs folder). Check the chip for the colored marking and pass the label to load the correct file.
